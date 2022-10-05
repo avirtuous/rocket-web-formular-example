@@ -229,7 +229,7 @@ async fn main() {
         }));
 
     if parse_env() == "development" {
-        let static_files = FileServer::from("./static/");
+        let static_files = FileServer::from("C:\\Users\\white\\Documents\\GitHub\\FileUploadAPI\\rocket-web-formular-example\\static");
         result = result.mount("/static", static_files);
     }
 
